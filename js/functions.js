@@ -111,14 +111,14 @@ function PutCardInElement(element,addorreplace,card,player,styles){
 			document.getElementById("curcardsholder1").innerHTML=parseInt(document.getElementById("curcardsholder1").innerHTML)+1;
 		
 			//adds the html for the card to the element
-			element.innerHTML+='<img src="cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('1"+document.getElementById("curcardsholder1").innerText+"')"+'"'+"id = 'player1"+document.getElementById("curcardsholder1").innerHTML+"'>";
+			element.innerHTML+='<img src="Cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('1"+document.getElementById("curcardsholder1").innerText+"')"+'"'+"id = 'player1"+document.getElementById("curcardsholder1").innerHTML+"'>";
 
 		} else{
 			//adds one to the curcard holder for player 2
 			document.getElementById("curcardsholder2").innerHTML=parseInt(document.getElementById("curcardsholder2").innerHTML)+1;
 
 			//adds the html for the card element
-			element.innerHTML+='<img src="cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('2"+document.getElementById("curcardsholder2").innerText+"')"+'"'+"id = 'player2"+document.getElementById("curcardsholder2").innerHTML+"'>";
+			element.innerHTML+='<img src="Cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('2"+document.getElementById("curcardsholder2").innerText+"')"+'"'+"id = 'player2"+document.getElementById("curcardsholder2").innerHTML+"'>";
 
 
 
@@ -149,7 +149,7 @@ function parseCard(player,number){
 	var element=document.getElementById("player"+player+number);}
 		// parses the elements source to get the name
 	if(element===null){return;}else{
-	var elementname = element.src.replace('.svg','').split("/cards")[1].replace("/",'');}
+	var elementname = element.src.replace('.svg','').split("/Cards")[1].replace("/",'');}
 	// checks all cases. sets the primary/secondary
 	if(elementname.includes("+2")){
 		var elementsecondary = "+2";
@@ -291,7 +291,7 @@ function moveCard(player,number){
 	var element = document.createElement("img")
 
 	//change src
-	element.src="cards/"+parsed[0]+".svg";
+	element.src="Cards/"+parsed[0]+".svg";
 
 	//change styles
 	element.style.height="300px";
