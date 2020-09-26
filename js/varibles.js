@@ -1,0 +1,4 @@
+var CardNames = ["Blue+2","Blue0-9","Blue0","Blue1","Blue2","Blue3","Blue4","Blue5","Blue6","Blue7","Blue8","Blue9","BlueReverse","BlueSkip","Green+2","Green0-9","Green0","Green1","Green2","Green3","Green4","Green5","Green6","Green7","Green8","Green9","GreenReverse","GreenSkip","Red+2","Red0-9","Red0","Red1","Red2","Red3","Red4","Red5","Red6","Red7","Red8","Red9","RedReverse","RedSkip","Wild","Wild+4","Yellow+2","Yellow0-9","Yellow0","Yellow1","Yellow2","Yellow3","Yellow4","Yellow5","Yellow6","Yellow7","Yellow8","Yellow9","YellowReverse","YellowSkip"];
+var player1cardsArray = [];
+var player2cardsArray = [];
+var curcard;

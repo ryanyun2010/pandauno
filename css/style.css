@@ -1,0 +1,99 @@
+/******
+Reset
+*******/
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/******
+Styles
+*******/
+#middlecard:hover{
+	transform:scale(1.07,1.07);
+	transition: transform 0.35s;
+}
+#middlecard{
+	transform:scale(1,1);
+	transition: transform 0.35s;
+}
+#middle{
+	height:300px;
+	position:absolute;
+	top:30vh;
+	left:43vw;
+
+}
+#player1cards{
+	position: absolute;
+	top:3vh;
+	width:100vw;
+	text-align:center;
+	
+}
+#player2cards{
+	position: absolute;
+	bottom:3vh;
+	width:100vw;
+	text-align:center;
+	transition:transform 0.35s;
+}
+
+body{
+	background-color:#dfdfdf;
+}
+
+#startingscreen{
+	width:100vw;
+	height:100vh;
+	background-color:#efefef66;
+	z-index:100;
+	position:fixed;
+	top:0;
+	left:0;
+	text-align:center;
+	padding-top:25vh;
+}
+#start{
+	width:10vw;
+	height:5vh;
+	border-radius:1vw;
+	font-size:2em;
+}
+button:focus{
+	outline:0;
+}
+#UNO{
+	height:100vh;
+	color:orange;
+	font-size:10em;
+	font-weight:bold;
+	 text-shadow: 7px 7px 7px #000;
+
+}
+#player1cards img{
+	transition:transform 0.35s;
+}
+#player1cards img:hover{
+	z-index: 100000;
+	transform: translate(0px, 3vh);
+	transition:transform 0.35s;
+}
+#player2cards img{
+	transition:transform 0.35s;
+}
+#player2cards img:hover{
+	z-index: 100000;
+	transform: translate(0px, -3vh);
+	transition:transform 0.35s;
+}
+#player1cards img{
+	display:inline-block;
+	margin-left:-50px;
+}
+#player2cards img{
+	display:inline-block;
+	margin-left:-50px;
+}
