@@ -86,21 +86,21 @@ function PutCardInElement(element,addorreplace,card,player,styles){
 		// if statement to check player. 0 = middle.
 		if(player === 0){
 			//replace element with card id = middlecard
-			element.innerHTML='<img src="cards/'+card+'.svg" style="'+styles+'" id = "middlecard">';
+			element.innerHTML='<img src="Cards/'+card+'.svg" style="'+styles+'" id = "middlecard">';
 
 		}else if(player === 1){
 			// adds one to the current card holder for player 1.
 			document.getElementById("curcardsholder1").innerHTML=parseInt(document.getElementById("curcardsholder1").innerHTML)+1;
 		
 			// replace element with picture of card
-			element.innerHTML='<img src="cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('1"+document.getElementById("curcardsholder1").innerText+"')"+'"'+"id = 'player1"+document.getElementById("curcardsholder1").innerHTML+"'>";
+			element.innerHTML='<img src="Cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('1"+document.getElementById("curcardsholder1").innerText+"')"+'"'+"id = 'player1"+document.getElementById("curcardsholder1").innerHTML+"'>";
 
 		}else{
 			//adds one to the current card holder for player2.
 			document.getElementById("curcardsholder2").innerHTML=parseInt(document.getElementById("curcardsholder2").innerHTML)+1;
 			
 			// replace element with picture.
-			element.innerHTML='<img src="cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('2"+document.getElementById("curcardsholder2").innerText+"')"+'"'+"id = 'player2"+document.getElementById("curcardsholder2").innerHTML+"'>";
+			element.innerHTML='<img src="Cards/'+card+'.svg" style="'+styles+'"onclick="'+"cardclicked('2"+document.getElementById("curcardsholder2").innerText+"')"+'"'+"id = 'player2"+document.getElementById("curcardsholder2").innerHTML+"'>";
 
 		}
 	}
